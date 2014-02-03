@@ -1,0 +1,4 @@
+.center-vert {
+  position: relative;
+  top: 34%;
+  transform: translateY(-34%); }

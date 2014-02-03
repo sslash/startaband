@@ -1,0 +1,35 @@
+@import 'variables';
+.nav {
+	width:100%;
+	height:$nav-height;
+	background: $nav-black;
+
+	li {
+		float:left;
+		.center {
+			position:inline-block;
+		}
+	}
+	&.top {
+		position:fixed;
+		top:0;
+	}
+
+	.nav-left {
+		float:left;
+	}
+
+	.brand {
+		color: $green;
+	}
+
+	.nav-center {
+		margin: auto;
+		width:300px;
+	}
+
+	.nav-right {
+		float:right;
+		margin-right:30px;
+	}
+}

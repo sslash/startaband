@@ -1,0 +1,1 @@
+var main = 'Hello main';

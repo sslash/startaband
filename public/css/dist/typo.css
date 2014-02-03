@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "freebie-bold";
+  src: url("/fonts/freebie/Exo2.0-Bold.otf") format("opentype"); }
+
+.nav li {
+  font-family: "freebie-bold", Georgia, serif;
+  font-size: 1.4em; }
