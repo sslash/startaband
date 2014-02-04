@@ -1,0 +1,20 @@
+@mixin transition ($arg...) {
+	-webkit-transition: $arg;
+	-moz-transition: $arg;
+	-o-transition: $arg;
+	transition: $arg;
+}
+
+@mixin shadow ($arg...){
+	-moz-box-shadow:    $arg;
+	-webkit-box-shadow: $arg;
+	box-shadow:         $arg;
+}
+
+@mixin letransform ($arg...) {
+	-webkit-transform: $arg;
+	-moz-transform:    $arg;
+	-ms-transform:     $arg;
+	-o-transform:      $arg;
+	transform:         $arg;
+}

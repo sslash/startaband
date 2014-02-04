@@ -1,13 +1,32 @@
 @import 'variables';
+@import 'mixins';
 .nav {
 	width:100%;
 	height:$nav-height;
 	background: $nav-black;
 
+	@include shadow(0px 4px 8px 0px #222);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+
 	li {
 		float:left;
+		padding: 3px;
+		cursor: pointer;
 		.center {
 			position:inline-block;
+		}
+
+		@include transition(color ease-out 200ms);
+
+		&:hover {
+			color: $black;
+
+		}
+
+		.profile-icon {
+			position: relative;
+			top: -9px;
+			margin: 0 10px;
 		}
 	}
 	&.top {

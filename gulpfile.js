@@ -43,6 +43,6 @@ gulp.task('default', function() {
 	})
 
 	gulp.watch('public/css/**', function(event) {
-		gulp.run('styles');
+		gulp.run('sass');
 	})
 })

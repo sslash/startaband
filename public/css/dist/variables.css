@@ -1,4 +1,7 @@
 .center-vert {
   position: relative;
-  top: 34%;
-  transform: translateY(-34%); }
+  top: 25%;
+  transform: translateY(-25%); }
+
+.pointer {
+  cursor: pointer; }
