@@ -1,11 +1,12 @@
 @import 'variables';
 @import 'mixins';
+
 .nav {
 	width:100%;
 	height:$nav-height;
 	background: $nav-black;
 
-	@include shadow(0px 4px 8px 0px #222);
+	@include shadow( 0px 4px 8px 0px #0A0A0A);
 	border-bottom: 1px solid rgba(255, 255, 255, 0.14);
 
 	li {
@@ -52,3 +53,4 @@
 		margin-right:30px;
 	}
 }
+

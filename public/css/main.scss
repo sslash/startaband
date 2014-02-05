@@ -3,18 +3,21 @@
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
 
-html,
-button,
-input,
-select,
-textarea {
+   html,
+   button,
+   input,
+   select,
+   textarea {
     color: $white;
 }
 
 body {
     font-size: 1em;
     line-height: 1.4;
-    background: $black;
+    background-image: url('/img/outlets.png');
+    background-position: initial initial;
+    background-repeat: initial initial;
+    -webkit-font-smoothing: antialiased;
 }
 
 ::-moz-selection {
@@ -80,22 +83,22 @@ textarea {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+   @media only screen and (min-width: 35em) {
 
-}
+   }
 
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
+   @media print,
+   (-o-min-device-pixel-ratio: 5/4),
+   (-webkit-min-device-pixel-ratio: 1.25),
+   (min-resolution: 120dpi) {
 
-}
+   }
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
 
-.ir {
+   .ir {
     background-color: transparent;
     border: 0;
     overflow: hidden;
@@ -157,7 +160,7 @@ textarea {
    Print styles
    ========================================================================== */
 
-@media print {
+   @media print {
     * {
         background: transparent !important;
         color: #000 !important; /* Black prints faster: h5bp.com/s */
@@ -182,9 +185,9 @@ textarea {
      * Don't show links for images, or javascript/internal links
      */
 
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
+     .ir a:after,
+     a[href^="javascript:"]:after,
+     a[href^="#"]:after {
         content: "";
     }
 

@@ -1,0 +1,10 @@
+@import 'variables';
+
+main {
+	margin-top: $nav-height;
+}
+
+[data-region="thumbails"] {
+	text-align: center;
+	margin:100px 100px;
+}

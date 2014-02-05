@@ -1,6 +1,23 @@
+@import 'variables';
+
 @font-face {
 	font-family: "freebie-bold";
 	src: url("/fonts/freebie/Exo2.0-Bold.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "freebie-medium";
+	src: url("/fonts/freebie/Exo2.0-Medium.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "freebie-regular";
+	src: url("/fonts/freebie/Exo2.0-regular.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "freebie-light";
+	src: url("/fonts/freebie/Exo2.0-Light.otf") format("opentype");
 }
 
 .nav {
@@ -8,3 +25,21 @@
 		font-family: "freebie-bold", Georgia, serif;
 	}
 }
+
+.lead {
+	font-family: "freebie-light" !important;
+}
+
+p, span {
+	font-family: "freebie-regular";
+}
+
+small {
+	font-family: "freebie-medium";
+	font-size:11px;
+	color: $greyText;
+}
+
+
+.font-xsmall { font-size:11px;}
+.font-small { font-size: 13px;}

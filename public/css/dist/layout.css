@@ -5,3 +5,10 @@
 
 .pointer {
   cursor: pointer; }
+
+main {
+  margin-top: 55px; }
+
+[data-region="thumbails"] {
+  text-align: center;
+  margin: 100px 100px; }
