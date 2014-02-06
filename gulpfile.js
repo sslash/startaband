@@ -9,10 +9,10 @@ var lr = require('tiny-lr');
 var server = lr();
 
 gulp.task('scripts', function() {  
-	gulp.src(['public/js/**/*.js'])
-	.pipe(browserify())
+	gulp.src(['public/js/main.js'])
+	.pipe(browserify({insertGlobals : true}))
 	.pipe(concat('public/dist/dest.js'))
-	.pipe(gulp.dest('build'))
+	.pipe(gulp.dest('public/build'))
 	.pipe(refresh(server))
 })
 
@@ -22,12 +22,12 @@ gulp.task('sass', function () {
 	.pipe(gulp.dest('public/css/dist'));
 });
 
-gulp.task('styles', function() {  
-	gulp.src(['public/css/dist/*.css'])
-	.pipe(styl({compress : true}))
-	.pipe(gulp.dest('public/dist/build'))
-	.pipe(refresh(server))
-})
+// gulp.task('styles', function() {  
+// 	gulp.src(['public/css/dist/*.css'])
+// 	.pipe(styl({compress : true}))
+// 	.pipe(gulp.dest('public/dist/build'))
+// 	.pipe(refresh(server))
+// })
 
 gulp.task('lr-server', function() {  
 	server.listen(35729, function(err) {
@@ -36,7 +36,7 @@ gulp.task('lr-server', function() {
 })
 
 gulp.task('default', function() {  
-	gulp.run('lr-server', 'scripts', 'sass', 'styles');
+	gulp.run('lr-server', 'scripts', 'sass');
 
 	gulp.watch('public/js/**', function(event) {
 		gulp.run('scripts');

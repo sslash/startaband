@@ -5,15 +5,31 @@
   "scripts": {
     "start": "node --harmony app.js"
   },
+   "engines": {
+    "node": "0.10.x",
+    "npm":  "1.2.x"
+  },
   "dependencies": {
     "express": "~3.3.4",
     "mongoose": "~3.6.14",
     "hogan-express": "~0.5.2",
-    "gulp-livereload": "~0.3.1",
-    "tiny-lr": "0.0.5"
+    "tiny-lr": "0.0.5",
+    "connect-mongo": "latest",
+    "connect-flash": "latest",
+    "passport": "latest",
+    "passport-local": "latest",
+    "passport-facebook": "latest",
+    "passport-twitter": "latest",
+    "passport-google-oauth": "latest",
+    "winston": "latest",
+    "notifier": "latest",
+    "async": "latest",
+    "view-helpers": "latest",
+    "forever": "latest"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
+    "gulp-livereload": "~0.3.1",
     "grunt-develop": "~0.2.2",
     "grunt-contrib-watch": "~0.5.3",
     "grunt-contrib-compass": "~0.6.0",
